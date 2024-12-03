@@ -1,67 +1,66 @@
+/* Main layout */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #FCF7F8;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FCF7F8;
+  color: #4E8098;
 }
-
 header {
-    background-color: #A31621;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #A31621;
+  color: #FCF7F8;
+  padding: 1rem;
+  text-align: center;
 }
-
-header .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header .logo {
-    width: 50px;
-    margin-right: 10px;
-}
-
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+nav li a {
+  color: #FCF7F8;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav li a:hover {
+  color: #CED3DC;
+}
+/* Intro section */
+#intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+.volunteer-images img {
+  width: 150px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li {
-    margin: 0 15px;
+/* Pet Section */
+.pet-card {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #CED3DC;
+  border-radius: 8px;
 }
-
-nav ul li a {
-    color: #FCF7F8;
-    text-decoration: none;
+.pet-card img {
+  width: 100%;
 }
-
-.intro, .about, .schedule, .pets, .volunteer, .donation {
-    padding: 2rem;
-    text-align: center;
+.pet-info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FCF7F8;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-
-.pet-grid img, .volunteer-images img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 0.5rem;
-    border: 1px solid #CED3DC;
-    border-radius: 10px;
-}
-
-.pet-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-footer {
-    background-color: #4E8098;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+.pet-card:hover .pet-info {
+  opacity: 1;
 }
