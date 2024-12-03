@@ -1,246 +1,143 @@
-/* Global Styles */
-* {
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #FCF7F8;
     color: #333;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-/* Header Section */
-header {
-    background-color: #A31621;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-container img {
-    width: 150px;
-    border-radius: 50%;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-/* Intro Section */
-#intro {
     text-align: center;
-    padding: 50px 0;
-    background-color: #CED3DC;
 }
 
-#intro h1 {
-    font-size: 2.5em;
+h2, h3 {
     color: #A31621;
 }
 
-#intro p {
-    font-size: 1.2em;
-    color: #333;
+/* Logo */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Sections */
+section {
+    padding: 40px 10%;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 /* Mission Section */
-#our-mission {
-    padding: 50px;
-    background-color: #FCF7F8;
-    text-align: center;
-}
-
-#our-mission h2 {
-    font-size: 2.2em;
-    color: #A31621;
-}
-
-#our-mission p {
+#mission p {
     font-size: 1.1em;
-    color: #333;
-    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Schedule Section */
-#schedule {
-    padding: 40px;
+/* Volunteer Section */
+#volunteer ol {
+    text-align: left;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 600px;
+}
+
+#volunteer ol li {
+    margin: 10px 0;
+}
+
+/* Schedule Table */
+#schedule table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+#schedule th, #schedule td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #A31621;
+}
+
+#schedule th {
     background-color: #A31621;
     color: #fff;
-    text-align: center;
+    font-size: 1.2em;
 }
 
-#schedule h2 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-}
-
-#schedule ul {
+#schedule td {
     font-size: 1.1em;
+    color: #333;
 }
 
-/* Pets Section */
-#pets {
-    padding: 50px;
-    background-color: #FCF7F8;
-}
-
-#pets h2 {
-    font-size: 2.5em;
-    text-align: center;
-    color: #A31621;
-    margin-bottom: 30px;
-}
-
+/* Adoptable Pets Section */
 .pet-section {
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .pet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    justify-items: center;
 }
 
 .pet-card {
     background-color: #fff;
+    border: 1px solid #CED3DC;
     padding: 20px;
-    border-radius: 8px;
+    text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
 }
 
 .pet-card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-.pet-card .pet-info {
-    margin-top: 10px;
-}
-
-.pet-card p {
-    font-size: 1.1em;
-    color: #333;
-}
-
-.pet-card span {
-    font-size: 1em;
-    color: #777;
-}
-
-/* Volunteer Section */
-#volunteer {
-    padding: 50px;
-    background-color: #CED3DC;
-    text-align: center;
-}
-
-#volunteer h2 {
-    font-size: 2.5em;
-    color: #A31621;
-    margin-bottom: 30px;
-}
-
-#volunteer ol {
+.pet-info p {
     font-size: 1.2em;
-    line-height: 1.8;
-    margin-bottom: 30px;
+    font-weight: bold;
 }
 
-.volunteer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.volunteer-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #A31621;
+.pet-info span {
+    display: block;
+    margin-top: 5px;
 }
 
 /* Donate Section */
 #donate {
-    padding: 50px;
-    text-align: center;
     background-color: #A31621;
-    color: #fff;
-}
-
-#donate h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#donate p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    color: white;
+    padding: 20px;
 }
 
 #donate button {
     background-color: #FCF7F8;
     color: #A31621;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 10px 20px;
+    font-size: 1.1em;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
 }
 
-#donate button a {
+#donate button:hover {
+    background-color: #FFDDDD;
     color: #A31621;
-}
-
-/* Contact Section */
-#contact {
-    padding: 50px;
-    background-color: #FCF7F8;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.5em;
-    color: #A31621;
-    margin-bottom: 20px;
-}
-
-#contact p {
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-    background-color: #A31621;
+    background-color: #4E8098;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
 }
-
 
