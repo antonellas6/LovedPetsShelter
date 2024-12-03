@@ -1,143 +1,166 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #FCF7F8;
-    color: #333;
+    color: #4E8098;
     text-align: center;
 }
 
-h2, h3 {
+h1, h2, h3 {
     color: #A31621;
 }
 
-/* Logo */
-.logo-container {
-    text-align: center;
-    margin-top: 20px;
+a {
+    color: #4E8098;
+    text-decoration: none;
 }
 
-.logo {
-    width: 200px;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #A31621;
+    padding: 10px 0;
+}
+
+header .logo-container {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+header .logo {
+    max-width: 100%;
     height: auto;
 }
 
-/* Sections */
+/* Section Styles */
 section {
-    padding: 40px 10%;
+    padding: 40px 20px;
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 /* Mission Section */
 #mission p {
+    margin-bottom: 20px;
     font-size: 1.1em;
-    line-height: 1.6;
 }
 
 /* Volunteer Section */
 #volunteer ol {
+    list-style-type: decimal;
+    margin: 0 auto;
+    display: inline-block;
     text-align: left;
-    margin: 20px auto;
-    padding: 0;
-    max-width: 600px;
+    font-size: 1.1em;
 }
 
-#volunteer ol li {
-    margin: 10px 0;
+#volunteer li {
+    margin-bottom: 10px;
 }
 
-/* Schedule Table */
+/* Schedule Section */
 #schedule table {
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
+    background-color: #CED3DC;
+    border-radius: 10px;
 }
 
 #schedule th, #schedule td {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
-    border: 1px solid #A31621;
+    border: 1px solid #4E8098;
 }
 
 #schedule th {
     background-color: #A31621;
-    color: #fff;
-    font-size: 1.2em;
+    color: white;
 }
 
-#schedule td {
-    font-size: 1.1em;
-    color: #333;
+#schedule tr:nth-child(even) {
+    background-color: #FCF7F8;
 }
 
-/* Adoptable Pets Section */
-.pet-section {
+#schedule tr:nth-child(odd) {
+    background-color: #CED3DC;
+}
+
+/* Pets Section */
+#pets {
     margin-top: 40px;
+}
+
+.pet-section h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-items: center;
 }
 
 .pet-card {
-    background-color: #fff;
-    border: 1px solid #CED3DC;
+    background-color: white;
     padding: 20px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 200px;
+    position: relative;
 }
 
 .pet-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.pet-info p {
-    font-size: 1.2em;
-    font-weight: bold;
+.pet-card img:hover {
+    transform: scale(1.05);
 }
 
-.pet-info span {
-    display: block;
-    margin-top: 5px;
-}
-
-/* Donate Section */
-#donate {
-    background-color: #A31621;
+.pet-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
 }
 
-#donate button {
-    background-color: #FCF7F8;
-    color: #A31621;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    border: none;
-    cursor: pointer;
-}
-
-#donate button:hover {
-    background-color: #FFDDDD;
-    color: #A31621;
+.pet-card:hover .pet-info {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Footer */
 footer {
     background-color: #4E8098;
-    color: #fff;
-    padding: 10px 0;
-    margin-top: 40px;
+    color: white;
+    padding: 20px 0;
 }
 
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
