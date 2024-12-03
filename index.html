@@ -1,68 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loved Pets Animal Shelter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Loved Pets Animal Shelter Logo" class="logo">
+            <img src="logo.png" alt="Loved Pets Logo" class="logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#our-mission">Our Mission</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#pets">Pets</a></li>
-                <li><a href="#volunteer">Volunteer</a></li>
-                <li><a href="#donate">Donate</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Intro Section -->
-    <section id="intro">
-        <h1>Welcome to Loved Pets Animal Shelter</h1>
-        <p>Your new furry friend is waiting for you!</p>
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a loving forever home.
+        We provide initial veterinary care to rescued animals, then work to match each animal with a human family
+        to love them and keep them safe forever. All animals are screened for diseases upon arrival, washed and groomed,
+        and then added to our website for adoptive families to see. All potential adoptive families are also screened for
+        adoption history, household lifestyle, and commitment to providing a safe and loving home.</p>
+        <p>We can always use volunteers to help keep our shelter open! Volunteers are needed to bathe and groom animals, play
+        with pets to help them socialize and keep them happy, clean kennels and screening rooms, and help with administrative
+        tasks in the office. If you're interested in volunteering, please complete the steps below.</p>
     </section>
 
-    <!-- Our Mission Section -->
-    <section id="our-mission">
-        <h2>Our Mission</h2>
-        <p>At Loved Pets Animal Rescue, we believe all animals deserve a chance to find a loving forever home. We provide
-            initial veterinary care to rescued animals, then work to match each animal with a human family to love them and
-            keep them safe forever. All animals are screened for diseases upon arrival, washed and groomed, and then added to
-            our website for adoptive families to see. All potential adoptive families are also screened for adoption history,
-            household lifestyle, and commitment to providing a safe and loving home.</p>
-        <p>We can always use volunteers to help keep our shelter open! Volunteers are needed to bathe and groom animals, play
-            with pets to help them socialize and keep them happy, clean kennels and screening rooms, and help with administrative
-            tasks in the office. If you’re interested in volunteering, please complete the steps below.</p>
+    <!-- How to Become a Volunteer Section -->
+    <section id="volunteer">
+        <h2>How to Become a Volunteer</h2>
+        <ol>
+            <li>Complete the online application.</li>
+            <li>Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a>.</li>
+            <li>Participate in a brief phone interview.</li>
+            <li>Attend a volunteer training session on the first Saturday of every month.</li>
+        </ol>
     </section>
 
     <!-- Schedule Section -->
     <section id="schedule">
         <h2>Hours of Operation</h2>
-        <ul>
-            <li>Monday: 8am - 5pm</li>
-            <li>Tuesday: 8am - 5pm</li>
-            <li>Wednesday: 8am - 8pm</li>
-            <li>Thursday: 8am - 5pm</li>
-            <li>Friday: 8am - 12pm</li>
-            <li>Saturday: 8am - 12pm</li>
-            <li>Sunday: Closed</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>8am - 5pm</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>8am - 5pm</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>8am - 8pm</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>8am - 5pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>8am - 12pm</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>8am - 12pm</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <!-- Pets Section -->
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Business Name:</strong> Loved Pets Animal Shelter</p>
+        <p><strong>Address:</strong> 6645 Watergrass Cir., Springfield, Arizona 11645</p>
+        <p><strong>Phone Number:</strong> <a href="tel:+15554762984">(555) 476-2984</a></p>
+        <p><strong>Email:</strong> <a href="mailto:josie@welovepets.com">josie@welovepets.com</a></p>
+    </section>
+
+    <!-- Adoptable Pets Section -->
     <section id="pets">
         <h2>Adoptable Pets</h2>
+
         <div class="pet-section">
             <h3>Cats</h3>
             <div class="pet-grid">
@@ -158,46 +191,19 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Volunteer Section -->
-    <section id="volunteer">
-        <h2>How to Become a Volunteer</h2>
-        <ol>
-            <li>Complete the online application</li>
-            <li>Submit the application by emailing it to <a href="mailto:volunteer@welovepets.com">volunteer@welovepets.com</a></li>
-            <li>Participate in a brief phone interview</li>
-            <li>Attend a volunteer training session on the first Saturday of every month</li>
-        </ol>
-        <h3>Volunteer Photos</h3>
-        <div class="volunteer-grid">
-            <img src="v1.png" alt="Volunteer 1">
-            <img src="v2.png" alt="Volunteer 2">
-            <img src="v3.png" alt="Volunteer 3">
-            <img src="v4.png" alt="Volunteer 4">
-        </div>
     </section>
 
     <!-- Donate Section -->
     <section id="donate">
-        <h2>Donate</h2>
-        <p>We rely on donations to continue our work. Please consider supporting us by making a donation today!</p>
+        <h2>Donate to Our Cause</h2>
+        <p>Your generous donations help us provide food, shelter, and medical care to our rescued animals. Thank you for supporting our mission!</p>
         <button>Donate Now</button>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Business Name: Loved Pets Animal Shelter</p>
-        <p>Address: 6645 Watergrass Cir., Springfield, Arizona 11645</p>
-        <p>Phone #: (555) 476-2984</p>
-        <p>Email: <a href="mailto:josie@welovepets.com">josie@welovepets.com</a></p>
-    </section>
-
     <footer>
-        <p>&copy; 2024 Loved Pets Animal Shelter</p>
+        <p>&copy; 2024 Loved Pets Animal Shelter. All Rights Reserved.</p>
     </footer>
 
 </body>
-
 </html>
