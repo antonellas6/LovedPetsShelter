@@ -1,66 +1,164 @@
-/* Main layout */
+/* General Styling */
 body {
   font-family: 'Arial', sans-serif;
+  color: #4E8098;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #FCF7F8;
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #A31621;
+}
+
+a {
+  text-decoration: none;
   color: #4E8098;
 }
+
+/* Header and Navbar */
 header {
-  background-color: #A31621;
-  color: #FCF7F8;
-  padding: 1rem;
-  text-align: center;
-}
-nav ul {
   display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #CED3DC;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
-nav li a {
-  color: #FCF7F8;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav li a:hover {
-  color: #CED3DC;
-}
-/* Intro section */
-#intro {
-  text-align: center;
-  padding: 2rem 0;
-}
-.volunteer-images img {
-  width: 150px;
-  margin: 0 10px;
-  border-radius: 10px;
+
+header .logo {
+  width: 100px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 2px solid #FCF7F8;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Pet Section */
-.pet-card {
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #CED3DC;
-  border-radius: 8px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
-.pet-card img {
-  width: 100%;
+
+nav ul li a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
-.pet-info {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+
+nav ul li a:hover {
+  background-color: #A31621;
   color: #FCF7F8;
-  padding: 10px;
+}
+
+/* Section Styling */
+section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Pet Grid Styling */
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.pet-card {
+  background-color: #CED3DC;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-align: center;
+  padding-bottom: 1rem;
+}
+
+.pet-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4E8098;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pet-card:hover img {
+  transform: scale(1.1);
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pet-info {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.pet-info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.pet-info span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #4E8098;
+}
+
+/* Volunteer Section */
+#volunteer img {
   width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
-.pet-card:hover .pet-info {
-  opacity: 1;
+
+form {
+  background-color: #CED3DC;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: 1px solid #4E8098;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #A31621;
+  color: #FCF7F8;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4E8098;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #CED3DC;
+}
+
